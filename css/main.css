@@ -1,16 +1,46 @@
 /* COMMON */
-body {}
-.page {}
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
+body {
+	background: url("../images/anonymous-server-background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100vw;
+	height: 100vh;
+}
 
+.page {
+	background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.35) 50%);
+}
 
 /* HEADER */
-.page__header {}
-.nav-trigger {}
+.page__header {
+	display: flex;
+	justify-content: flex-end;
+}
 
-
-
+.nav-trigger {
+	background-image: url("../images/ico-menu.svg"); background-repeat: no-repeat;
+	background-position: center center;
+	background-color: rgba(0,0,0, .7);
+	outline-style: none;
+	cursor: pointer;
+	width: 45px;
+	height: 45px;
+	border-radius: 3px;
+	border-style: none;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	font-size: 0px;
+}
 
 /* MENU */
 .nav {}
@@ -20,17 +50,49 @@ body {}
 .nav-close {}
 
 
-
-
 /* MAIN */
-.page__main {}
-.page__wrapper {}
-.page__main-title {}
+.page__main {
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 50%;
+}
+
+.page__wrapper {
+	width: 30%;
+}
+
+.page__main-title {
+	font-family: "Roboto Slab", serif;
+	text-transform: uppercase;
+	color: #ffffff;
+
+}
 
 
 
 
 /* FOOTER */
-.page__footer {}
-.page__footer {}
-.page__footer-copy {}
+.page__footer {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	background-color: rgba(255,255,255,.2);
+	width: 80%;
+	border-radius: 5px;
+}
+
+.page__wrapper {
+	width: 100%;
+	bottom: 0;
+}
+
+.page__footer-copy {
+	font-family: "Arial", serif;
+	font-weight: lighter;
+	color: #ffffff;
+	opacity: .5;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	align-items: flex-end;
+}
