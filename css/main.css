@@ -1,5 +1,5 @@
 /* COMMON */
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
 
 * {
 	margin: 0;
@@ -43,11 +43,50 @@ body {
 }
 
 /* MENU */
-.nav {}
-.nav__items {}
-.nav__item {}
-.nav__link {}
-.nav-close {}
+.nav {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(71,49,49, .9);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	display: none;
+}
+
+.nav__items {
+	list-style: none;
+	width: 80%;
+}
+
+.nav__item {
+	text-align: center;
+}
+
+.nav__link {
+	font-family: "Roboto Slab", serif;
+	font-size: 1.9em;
+	font-weight: 700;
+	line-height: 1.5em;
+	text-decoration: none;
+	color: rgb(208,208,207);
+}
+
+.nav-close {
+	background-image: url("../images/ico-close.svg"); background-repeat: no-repeat;
+	background-position: center center;
+	background-color: rgba(0,0,0, .7);
+	outline-style: none;
+	cursor: pointer;
+	width: 45px;
+	height: 45px;
+	border-radius: 3px;
+	border-style: none;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	font-size: 0px;
+}
 
 
 /* MAIN */
@@ -64,14 +103,12 @@ body {
 .page__main-title {
 	font-family: "Roboto Slab", serif;
 	text-transform: uppercase;
+	font-weight: normal;
 	color: #ffffff;
 }
 
 /* FOOTER */
 .page__footer {
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
 	margin: auto;
 	margin-top: 47%;
 	background-color: rgba(255,255,255,.2);
@@ -81,7 +118,6 @@ body {
 
 .page__wrapper {
 	width: 100%;
-	bottom: 0;
 }
 
 .page__footer-copy {
