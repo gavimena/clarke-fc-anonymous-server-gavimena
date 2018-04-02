@@ -118,12 +118,13 @@ body {
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #ffffff;
+	width: 40%;
 }
 
 /* FOOTER */
 .page__footer {
 	margin: auto;
-	margin-top: 27vh;
+	margin-top: 30vh;
 	background-color: rgba(255,255,255,.2);
 	width: 80%;
 	border-radius: 5px;
@@ -149,12 +150,15 @@ body {
 	}
 
 	.page__main-title {
-		font-size: 4em;
-		width: 70%;
+		font-size: 3em;
 	}
 
 	.nav__link {
-		font-size: 3em;
+		font-size: 2em;
+	}
+
+	.page__footer {
+		margin-top: 24vh;
 	}
 }
 
@@ -165,10 +169,13 @@ body {
 
 	.page__main-title {
 		font-size: 4.5em;
-		width: 70%;
 	}
 
 	.page__footer {
-		margin-top: 17vh;
+		margin-top: 15vh;
+	}
+
+	.nav__link {
+		font-size: 2.3em;
 	}
 }
